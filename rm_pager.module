@@ -8,3 +8,26 @@ function rm_pager_views_api() {
     'api' => 3,
   );
 }
+
+/**
+ * Implements hook_theme().
+ */
+function rm_pager_theme() {
+  return array(
+    'rm_pager_pager' => array(
+      'variables' => array(
+        'tags' => array(),
+        'element' => 0,
+        'parameters' => array()
+      ),
+    ),
+    'rm_pager_pager_next' => array(
+      'variables' => array(
+        'text' => NULL,
+        'element' => 0,
+        'interval' => 1,
+        'parameters' => array()
+      ),
+    ),
+  );
+}
