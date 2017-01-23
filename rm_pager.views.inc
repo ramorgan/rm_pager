@@ -11,7 +11,7 @@ function rm_pager_views_plugins(){
 $path = drupal_get_path('module', 'views_rmpager.views');
   $plugins = array(
     'pager' => array(
-      'rmpager_test' => array(
+      'rm_pager_test' => array(
         'title' => t('Views pager Reese Test'),
         'handler' => 'views_rmpager_plugin_pager',
         'parent' => 'full',
