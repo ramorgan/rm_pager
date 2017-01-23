@@ -2,4 +2,5 @@ name = Reese Morgan views pager(s)
 description = Learning to make a views pager.
 core = 7.x
 package = custom
+files[] = views_rmpager_plugin_pager.inc
 dependencies[] = views

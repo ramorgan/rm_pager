@@ -6,7 +6,20 @@
 function rm_pager_views_api() {
   return array(
     'api' => 3,
-    'path' => drupal_get_path('module', 'rm_pager') . '/includes/views',
-    'template path' => drupal_get_path('module', 'rm_pager') . '/themes',
   );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function rm_pager_theme() {
+  $return = array();
+
+  $return['rm_pager_pager'] = array(
+    'variable' => array(
+      ''
+    )
+  );
+
+  return $return;
 }
